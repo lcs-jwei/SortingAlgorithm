@@ -20,10 +20,17 @@ dataSet.append(2)
 dataSet.append(4)
 
 // Print the contents of the array
-print(dataSet)
-print("The array contains \(dataSet.count) elements.")
-
-for i in 0...dataSet.count - 1{
-    print("At index \(i) there is a value of \(dataSet[i])")
+print("---")
+for i in 0...dataSet.count - 1 - 1 {
+    
+    print("LEFT: At index \(i) there is a value of \(dataSet[i])")
+    print("RIGHT: At index \(i + 1) there is a value of \(dataSet[i + 1])")
+    
+    if dataSet[i] > dataSet[i + 1] {
+        print("LEFT side is greater")
+    } else {
+        print("RIGHT side is greater")
+    }
+    
+    print("----")
 }
-
